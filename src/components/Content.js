@@ -7,18 +7,20 @@ import Navbar from "./Navbar";
 
 const Content = () => {
   return (
-    <main className="flex-auto">
+    <main className="flex-auto overflow-auto">
       <Navbar />
       <Switch>
-        <Route exact path={"/"}>
-          <Home />
-        </Route>
-        <Route path={"/search"}>
-          <Search />
-        </Route>
-        <Route path={"/collection"}>
-          <Collection />
-        </Route>
+        <div className="px-8 py-5">
+          <Route exact path={"/"}>
+            <Home />
+          </Route>
+          <Route path={"/search"}>
+            <Search />
+          </Route>
+          <Route path={"/collection"}>
+            <Collection />
+          </Route>
+        </div>
       </Switch>
     </main>
   );
