@@ -35,7 +35,7 @@ const Sidebar = () => {
                 mr-4 bg-gradient-to-br
                  from-purple-700 text-white to-blue-200 opacity-60 group-hover:opacity-100 "
               >
-                <Icon name={"heart"} size={12} />
+                <Icon name={"heartFilled"} size={12} />
               </span>
               Beğenilen Şarkılar
             </a>

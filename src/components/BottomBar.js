@@ -1,9 +1,10 @@
 import React from "react";
+import Player from "./BottomBar/Player";
 
 const BottomBar = () => {
   return (
-    <div className="h-16 bg-pink-500 border-t border-white border-opacity-5 ">
-      bottombar
+    <div className="h-24  bg-footer border-t border-white border-opacity-5 ">
+      <Player />
     </div>
   );
 };
