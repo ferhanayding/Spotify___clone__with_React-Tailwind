@@ -13,7 +13,7 @@ const Player = () => {
   const [audio, state, controls, ref] = useAudio({
       src: current?.src
     });
-    console.log(state.playing)
+    // console.log(state.playing)
 
     useEffect(() => {
     controls.play()

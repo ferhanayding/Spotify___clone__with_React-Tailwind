@@ -5,6 +5,10 @@
 @layer base{
     html,body,#root{
         @apply h-full bg-backdrop text-white  antialiased 
+
+    }
+    html{
+        /* overflow:; */
     }
     #root{
         @apply flex flex-col
@@ -12,5 +16,17 @@
     .wrapper{
         height: calc(100% - theme('spacing.24'));
         @apply flex
+        
+    }
+    ::-webkit-scrollbar {
+        display: none;
+        visibility: hidden;
+        /* opacity: 0 */
+}
+    .scrollable{
+        scroll-behavior: smooth
+    }
+    .transitions {
+        transition : all 3s ease ;
     }
 }
